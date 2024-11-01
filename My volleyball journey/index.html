@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My photos</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1>Hey, let us take a tour on my volleyball journey!</h1>
+</head>
+<body>
+  <div class="gallery" id="gallery"></div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Gallery Image">
+    <div class="nav-buttons">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
